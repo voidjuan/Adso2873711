@@ -27,7 +27,7 @@
             justify-content: center;
             background-color: #fff;
             padding: 1.5rem;
-            
+            }
 
             .image1 {
                 background: url(IMAGES/unnamed.png);
@@ -37,25 +37,39 @@
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
+
+                div{
+                    position: absolute;
+                }
             }
 
             .image2 {
                 background: url(IMAGES/18fa68e6571a80ac73a8f422ccd01cef.png);
-                background-position: -450px px;
+                background-position: -450px 1px;
                 width: 235px;
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
+
+                div.pr2{
+                    position: absolute;
+                    background-color: #c74646;
+                }
             }
 
             .image3 {
                 background: url(IMAGES/c51c70ebfb7583099f1dcc3b33e79541.png);
                 background-position: -2px -7px;
+                font-weight: bold;
                 background-size: 95%;
                 width: 235px;
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
+
+                div.pr3{
+                    position: absolute;
+                }
             }
 
             .image4 {
@@ -66,8 +80,12 @@
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
+
+                div{
+                    position: absolute;
+                }
             }
-        }
+            
    
 
         
@@ -80,19 +98,14 @@
             <figure class="logo"></figure>
         </header>
         <div class="images">
-            <div class="image1">
-                <p>SONIC</p>
-            </div>
-            <div class="image2">
-                <p>KNUCKLES</p>
-            </div>
-            <div class="image3">
-                <p>AMY ROSE</p>
-            </div>
-            <div class="image4">
-                <p>BIG THE CAT</p>
-            </div>
+            <div class="image1"><div>SONIC</div></div>
+            <div class="image2"><div class="pr2">KNUCKLES</div></div>
+            <div class="image3"><div class="pr3">AMY ROSE</div></div>
+            <div class="image4"><div class="pr4">BIG THE CAT</div></div>
         </div>
+        <section>
+            <div></div>
+        </section>
 
     </main>
 </body>
