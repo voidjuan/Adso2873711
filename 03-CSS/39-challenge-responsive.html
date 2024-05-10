@@ -7,7 +7,8 @@
     <title>Challenge Responsive</title>
     <style>
         body {
-            background-color: #fff;
+            background: url(IMAGES/fondo.png);
+            background-size: 100%;
         }
 
         main header figure.logo {
@@ -25,7 +26,6 @@
             text-align: center;
             margin: 2rem;
             justify-content: center;
-            background-color: #fff;
             padding: 1.5rem;
             }
 
@@ -37,10 +37,6 @@
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
-
-                div{
-                    position: absolute;
-                }
             }
 
             .image2 {
@@ -50,11 +46,6 @@
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
-
-                div.pr2{
-                    position: absolute;
-                    background-color: #c74646;
-                }
             }
 
             .image3 {
@@ -66,24 +57,55 @@
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
-
-                div.pr3{
-                    position: absolute;
-                }
             }
 
             .image4 {
-                background: url(IMAGES/Frontiers_Big.png);
-                background-size: 100%;
-                background-position: -470px 3px;
+                background: url(IMAGES/BigTheCat.png);
+                background-size: 300%;
+                background-position: 470px -80px;
                 width: 235px;
                 font-weight: bold;
                 height: 220px;
                 border: 2px solid #0009;
+            }
 
-                div{
-                    position: absolute;
+            div.text1{
+                background: #fff;
+                width: 845px;
+                height: 276px;
+                position: relative;
+                left: 217px;
+                top: -15px;
+
+                h1{
+                    margin: 15px;
                 }
+                p{
+                    margin: 15px;
+                }
+            }
+
+            div.pr{
+                position: absolute;
+                bottom: 183px;
+                color: #fff;
+                display: block;
+                margin: 1px auto;
+                background-color: #000fff;
+                height: 40px;
+                width: 16%;
+                transition: all 0.2s ease-in;
+            }
+            div.pr:hover{
+                transform: translateY(-20px);
+            }
+            div.img{
+                background-color: #fff;
+                border: 2px solid #000;
+                margin: 200px;
+                bottom: 100px;
+                height: 276px;
+                position: relative;
             }
             
    
@@ -98,13 +120,29 @@
             <figure class="logo"></figure>
         </header>
         <div class="images">
-            <div class="image1"><div>SONIC</div></div>
-            <div class="image2"><div class="pr2">KNUCKLES</div></div>
-            <div class="image3"><div class="pr3">AMY ROSE</div></div>
-            <div class="image4"><div class="pr4">BIG THE CAT</div></div>
+            <div class="image1">
+                <div class="pr">SONIC</div>
+            </div>
+            <div class="image2">
+                <div class="pr">KNUCKLES</div>
+            </div>
+            <div class="image3">
+                <div class="pr">AMY ROSE</div>
+            </div>
+            <div class="image4">
+                <div class="pr">BIG THE CAT</div>
+            </div>
         </div>
+
         <section>
-            <div></div>
+            <div class="contenedor">
+            <div class="img">
+                <div class="text1">
+                    <h1>SONIC</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nesciunt commodi quidem ab est quod animi pariatur atque ipsa officiis, iure laudantium distinctio voluptas accusantium esse beatae placeat, fuga, neque doloribus sit dolor iusto? Corrupti quo repellat eaque blanditiis pariatur odit enim libero doloribus dolores. Quis dolores minus totam minima quae et, inventore mollitia quia vero aut voluptatem, libero veritatis, nostrum saepe. Alias quibusdam velit sit! Hic dicta quam, a voluptate, voluptatem illum autem cum laborum repellat et possimus perferendis corporis libero nam odit iure rerum ex quod nobis quis sunt nulla in suscipit facere? Excepturi pariatur molestias explicabo fugit.</p>
+                </div>
+            </div>
+        </div>
         </section>
 
     </main>
