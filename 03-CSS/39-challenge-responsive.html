@@ -18,20 +18,15 @@
             background-size: cover;
             background-position: center;
         }
-
         header {
             margin: 10px auto;
             width: 90%;
-            border: 2px solid #000;
             height: 277px;
         }
-
         .title {
             width: 100%;
             height: 100%;
         }
-
-
         div.images {
             display: flex;
             flex-wrap: wrap;
@@ -40,11 +35,8 @@
             text-align: center;
             justify-content: center;
             margin: 50px auto;
-            align-items: center;
             padding: 1.5rem;
-            border: 2px solid #000;
         }
-
         div.card {
             width: 250px;
             margin: 20px 15px;
@@ -54,36 +46,20 @@
         }
 
         .card-body1 {
-            border: 2px solid #000;
+            width: 100%;
             color: aliceblue;
             background-color: #567;
-            justify-content: center;
-            height: 70px;
+            height: 60px;
+            
         }
 
+        .card-body1:hover{
+            transform: translateY(-25px);
+        }
 
         .card-img-top {
-            max-height: 220px;
+            max-height: 210px;
         }
-
-        /* div.text1 {
-            background: #fff;
-            width: 845px;
-            height: 276px;
-            position: relative;
-            left: 217px;
-            top: -15px;
-
-            h1 {
-                margin: 15px;
-            }
-
-            p {
-                margin: 15px;
-            }
-        } */
-
-        
 
         .large {
             margin: 25px 15px;
@@ -96,6 +72,29 @@
             overflow-y: scroll;
             scroll-behavior: smooth;
         }
+
+        div.box{
+            width: 90%;
+            background-color: #fff;
+            border: 2px solid;
+            border-style: dotted;
+            max-height: 250px;
+            padding: 0.2rem;
+        }
+        div.col-md-3{
+            max-height: 249px;
+        }
+
+        img.img-fluid{
+            max-height: 100%;
+        }
+
+        div.card-body{
+            width: 600px;
+        }
+
+
+
     </style>
 </head>
 
@@ -130,14 +129,14 @@
                 </div>
             </div>
 
-            <div class="card mb-1 large">
+            <div class="box">
                 <div class="row g-1">
                     <div class="col-md-3">
-                        <img src="IMAGES/shadow-about.png" class="img-fluid rounded-start" alt="...">
+                        <img src="IMAGES/shadow-about.png" class="img-fluid">
                     </div>
                     <div class="col-md-9">
                         <div class="card-body">
-                            <h5 class="card-title">Shadow</h5>
+                            <h2 class="card-title">Shadow</h2>
                             <div class="scrolling">
                                 <p class="text1">This is a wider card with supporting text below as a natural
                                     lead-in to
@@ -145,12 +144,11 @@
                                     Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Excepturi dolorum magnam error repellendus aut similique at placeat dolor
                                     dignissimos alias provident expedita corrupti deleniti quaerat minus ab, molestias
-                                    aliquam adipisci. jbhhjvbjvvvbvmbvnbvbmvnvbvmb bmnvmb vamet consectetur adipisicing
+                                    aliquam adipisci. Vamet consectetur adipisicing
                                     elit. Quas fugit ut, distinctio natus temporibus aspernatur molestiae odio,
                                     voluptatem tempore vero sit voluptate quasi. Perspiciatis illum, rem ab hic sit
                                     deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui voluptas
-                                    odit exercitationem distinctio, nisi eaque saepe iure animi, dolor voluptatum
-                                    aspernatur cum itaque illo tenetur repudiandae alias neque non. lorem
+                                    odit.
                                 </p>
                             </div>
                         </div>
@@ -158,20 +156,32 @@
                 </div>
             </div>
 
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <div class="box">
+                <div class="row g-1">
+                    <div class="col-md-3">
+                        <img src="IMAGES/Amy_Rose.png" class="img-fluid">
                     </div>
-                  </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h2 class="card-title">Amy Rose</h2>
+                            <div class="scrolling">
+                                <p class="text1">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.
+                                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Excepturi dolorum magnam error repellendus aut similique at placeat dolor
+                                    dignissimos alias provident expedita corrupti deleniti quaerat minus ab, molestias
+                                    aliquam adipisci. Vamet consectetur adipisicing
+                                    elit. Quas fugit ut, distinctio natus temporibus aspernatur molestiae odio,
+                                    voluptatem tempore vero sit voluptate quasi. Perspiciatis illum, rem ab hic sit
+                                    deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui voluptas
+                                    odit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </main>
 </body>
