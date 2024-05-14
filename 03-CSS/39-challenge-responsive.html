@@ -18,15 +18,18 @@
             background-size: cover;
             background-position: center;
         }
+
         header {
             margin: 10px auto;
             width: 90%;
             height: 277px;
         }
+
         .title {
             width: 100%;
             height: 100%;
         }
+
         div.images {
             display: flex;
             flex-wrap: wrap;
@@ -37,6 +40,7 @@
             margin: 50px auto;
             padding: 1.5rem;
         }
+
         div.card {
             width: 250px;
             margin: 20px 15px;
@@ -50,10 +54,10 @@
             color: aliceblue;
             background-color: #567;
             height: 60px;
-            
+
         }
 
-        .card-body1:hover{
+        .card-body1:hover {
             transform: translateY(-25px);
         }
 
@@ -63,42 +67,50 @@
 
         .large {
             margin: 25px 15px;
-            
+
             height: 300px;
         }
 
-        .scrolling {
-            max-height: 200px;
-            overflow-y: scroll;
-            scroll-behavior: smooth;
+        div.imgOne{
+            border: 2px solid purple;
+            background: url(IMAGES/shadow-about.png);
+            height: 250px;
+            width: 250px;
         }
 
-        div.box{
-            width: 90%;
+        div.imgTwo{
+            border: 2px solid purple;
+            background: url(IMAGES/Amy_Rose.png);
+            height: 250px;
+            width: 250px;
+        }
+
+        div.shadow{
             background-color: #fff;
-            border: 2px solid;
+            border: 2px #000;
+            border-style: dotted
+        }
+
+        div.AMYROSE{
+            background-color: #fff;
+            border: 2px #000;
             border-style: dotted;
-            max-height: 250px;
-            padding: 0.2rem;
-        }
-        div.col-md-3{
-            max-height: 249px;
         }
 
-        img.img-fluid{
-            max-height: 100%;
+        nav.cajas{
+            border: 2px red solid;
+            width: 80%;
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px auto;
+        }
+        div.texto{
+            width: 82%;
         }
 
-        div.card-body{
-            width: 600px;
-        }
 
-        @media (max-width: 1038px){
-            img.img-fluid{
-                
-            }
-        }
-
+        
     </style>
 </head>
 
@@ -132,61 +144,47 @@
                     <p class="card-text">Sonic (Game 4)</p>
                 </div>
             </div>
-
-            <div class="box">
-                <div class="row1">
-                    <div class="col-md-3">
-                        <img src="IMAGES/shadow-about.png" class="img-fluid">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body">
-                            <h2 class="card-title">Shadow</h2>
-                            <div class="scrolling">
-                                <p class="text1">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This content is a little bit longer.
-                                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Excepturi dolorum magnam error repellendus aut similique at placeat dolor
-                                    dignissimos alias provident expedita corrupti deleniti quaerat minus ab, molestias
-                                    aliquam adipisci. Vamet consectetur adipisicing
-                                    elit. Quas fugit ut, distinctio natus temporibus aspernatur molestiae odio,
-                                    voluptatem tempore vero sit voluptate quasi. Perspiciatis illum, rem ab hic sit
-                                    deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui voluptas
-                                    odit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="row1">
-                    <div class="col-md-3">
-                        <img src="IMAGES/Amy_Rose.png" class="img-fluid">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body">
-                            <h2 class="card-title">Amy Rose</h2>
-                            <div class="scrolling">
-                                <p class="text1">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This content is a little bit longer.
-                                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Excepturi dolorum magnam error repellendus aut similique at placeat dolor
-                                    dignissimos alias provident expedita corrupti deleniti quaerat minus ab, molestias
-                                    aliquam adipisci. Vamet consectetur adipisicing
-                                    elit. Quas fugit ut, distinctio natus temporibus aspernatur molestiae odio,
-                                    voluptatem tempore vero sit voluptate quasi. Perspiciatis illum, rem ab hic sit
-                                    deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui voluptas
-                                    odit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
+        <nav class="cajas">
+            <div class="shadow">
+                <div class="imgOne"></div>
+                <div class="texto">
+                    <h2>SHADOW</h2>
+                    <p class="textOne">This is a wider card with supporting text below as a natural
+                        lead-in to
+                        additional content. This content is a little bit longer.
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Excepturi dolorum magnam error repellendus aut similique at placeat dolor
+                        dignissimos alias provident expedita corrupti deleniti quaerat minus ab, molestias
+                        aliquam adipisci. Vamet consectetur adipisicing
+                        elit. Quas fugit ut, distinctio natus temporibus aspernatur molestiae odio,
+                        voluptatem tempore vero sit voluptate quasi. Perspiciatis illum, rem ab hic sit
+                        deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui voluptas
+                        odit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="AMYROSE">
+                <div class="imgTwo"></div>
+                <div class="texto">
+                    <h2>AMY ROSE</h2>
+                    <p class="textOne">This is a wider card with supporting text below as a natural
+                        lead-in to
+                        additional content. This content is a little bit longer.
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Excepturi dolorum magnam error repellendus aut similique at placeat dolor
+                        dignissimos alias provident expedita corrupti deleniti quaerat minus ab, molestias
+                        aliquam adipisci. Vamet consectetur adipisicing
+                        elit. Quas fugit ut, distinctio natus temporibus aspernatur molestiae odio,
+                        voluptatem tempore vero sit voluptate quasi. Perspiciatis illum, rem ab hic sit
+                        deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui voluptas
+                        odit.
+                    </p>
+                </div>
+            </div>
+        </nav>
     </main>
 </body>
 
